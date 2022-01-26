@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content%}
+    <center>
+        <h3>Halaman Surat</h3>
+    </center>
+
+    {% for surat in letter %}
+        <li>{{surat.nomor_surat}}</li>
+    {% endfor %}
+
+{% endblock %}
